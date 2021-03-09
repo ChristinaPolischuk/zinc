@@ -864,20 +864,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     $('html').removeClass('fixed');
   });
   ;
-  var $header = $('.header');
-  var scrollPrev = 0;
-  var scrollToTop = 0;
-  $(window).scroll(function () {
-    var scrolled = $(window).scrollTop();
-
-    if (scrolled > 100 && scrolled > scrollPrev) {
-      $header.addClass('header-out');
-      scrollToTop = scrolled;
-    } else if (scrolled < scrollToTop - 250 || scrolled < 250) {
-      $header.removeClass('header-out');
+  $(document).on("scroll", function () {
+    if ($(document).scrollTop() > 100) {
+      $(".header").addClass("shrink");
+    } else {
+      $(".header").removeClass("shrink");
     }
-
-    scrollPrev = scrolled;
   });
   ;
 })();
