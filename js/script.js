@@ -865,7 +865,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   });
   ;
   $(document).on("scroll", function () {
-    if ($(document).scrollTop() > 100) {
+    if ($(document).scrollTop() > 50) {
       $(".header").addClass("shrink");
     } else {
       $(".header").removeClass("shrink");

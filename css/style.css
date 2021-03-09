@@ -531,37 +531,59 @@ a {
   top: 0;
 }
 
-.section {
-  padding: 30px 0;
-  min-height: 100vh;
+.section,
+.footer {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
 }
 
-.section:nth-child(1) {
+.section:nth-child(1),
+.footer:nth-child(1) {
+  z-index: 5;
+  margin-top: -500vh;
+  margin-bottom: 500vh;
+}
+
+.section:nth-child(2),
+.footer:nth-child(2) {
+  z-index: 4;
+  margin-top: -400vh;
+  margin-bottom: 400vh;
+}
+
+.section:nth-child(3),
+.footer:nth-child(3) {
   z-index: 3;
   margin-top: -300vh;
   margin-bottom: 300vh;
 }
 
-.section:nth-child(2) {
+.section:nth-child(4),
+.footer:nth-child(4) {
   z-index: 2;
   margin-top: -200vh;
   margin-bottom: 200vh;
 }
 
-.section:nth-child(3) {
+.section:nth-child(5),
+.footer:nth-child(5) {
   z-index: 1;
   margin-top: -100vh;
   margin-bottom: 100vh;
 }
 
-.section:nth-child(4) {
+.section:nth-child(6),
+.footer:nth-child(6) {
   z-index: 0;
   margin-top: 0vh;
   margin-bottom: 0vh;
   bottom: 0;
+}
+
+.section {
+  padding: 30px 0;
+  min-height: 100vh;
 }
 
 .section::after {
@@ -846,6 +868,85 @@ a {
   }
 }
 
+.footer {
+  padding: 30px 0;
+  background-color: #000;
+  font-size: 14px;
+}
+
+.footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  margin-bottom: 10px;
+}
+
+.footer-block:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer-title {
+  font-size: 14px;
+}
+
+.footer-text {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-text span {
+  display: block;
+}
+
+.footer-link {
+  display: block;
+  color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: color 0.2s;
+  -o-transition: color 0.2s;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: white;
+}
+
+.footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-social__link img {
+  width: 25px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  -o-transition: transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  -webkit-transform: scale(0.7);
+      -ms-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
+.footer-social__link:hover img {
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer-social__link:nth-child(2) img {
+  width: 15px;
+}
+
 .section-title {
   font-family: "ZINC 2020", Arial, sans-serif;
   font-weight: 400;
@@ -930,8 +1031,75 @@ a {
           align-items: center;
 }
 
+.section-fusion::after {
+  background-image: url(../img/pages/index/fusion_bg.jpg);
+}
+
 .section-covid::after {
   background-image: url(../img/pages/index/about_bg.jpg);
+}
+
+.section-feedback::after {
+  background-image: url(../img/pages/index/about_bg.jpg);
+}
+
+.feedback-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback-form__input,
+.feedback-form__message {
+  margin-bottom: 15px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  font-size: 16px;
+  color: #fff;
+}
+
+.feedback-form__input::-webkit-input-placeholder, .feedback-form__message::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.feedback-form__input::-moz-placeholder, .feedback-form__message::-moz-placeholder {
+  color: #fff;
+}
+
+.feedback-form__input:-ms-input-placeholder, .feedback-form__message:-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback-form__input::-ms-input-placeholder, .feedback-form__message::-ms-input-placeholder {
+  color: #fff;
+}
+
+.feedback-form__input::placeholder,
+.feedback-form__message::placeholder {
+  color: #fff;
+}
+
+.feedback-form__input {
+  padding: 0 15px;
+  height: 36px;
+}
+
+.feedback-form__message {
+  padding: 15px;
+  min-height: 114px;
+}
+
+.feedback-form__submit {
+  width: 161px;
+  height: 32px;
+  text-transform: uppercase;
+  background-color: #fff;
+  font-size: 16px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -946,7 +1114,7 @@ a {
   }
 
   .header {
-    top: 30px;
+    padding: 30px 0;
   }
 
   .section-title {
@@ -965,10 +1133,38 @@ a {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .footer-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer-social {
+    margin-top: 10px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .footer-social__links {
+    margin-left: 10px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .section-subtitle {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .section-text:not(:last-child) {
+    margin-bottom: 20px;
   }
 
   .section-text {
@@ -982,7 +1178,7 @@ a {
   }
 
   .header {
-    top: 15px;
+    padding: 15px 0;
   }
 
   .section-title {
@@ -1001,6 +1197,36 @@ a {
   }
 }
 
+@media screen and (max-width: 480px) {
+  .footer-contacts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .footer-block:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .footer-contacts {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .footer-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .webp .btn-download { background: url(../img/general/download_icon.webp) 95% 30% no-repeat; }
 
 .webp .section-main::after { background-image: url(../img/pages/index/ZincStudio.webp); }
@@ -1009,4 +1235,8 @@ a {
 
 .webp .section-services::after { background-image: url(../img/pages/index/services_bg.webp); }
 
+.webp .section-fusion::after { background-image: url(../img/pages/index/fusion_bg.webp); }
+
 .webp .section-covid::after { background-image: url(../img/pages/index/about_bg.webp); }
+
+.webp .section-feedback::after { background-image: url(../img/pages/index/about_bg.webp); }
