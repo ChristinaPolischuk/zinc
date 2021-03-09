@@ -4,7 +4,8 @@
 	"description": "Сборка gulp",
 	"main": "index.html",
 	"scripts": {
-		"deploy": "gh-pages -d zinc"
+		"deploy": "gh-pages -d zinc",
+		"gulp": "gulp"
 	},
 	"author": "Christina Polishuk",
 	"license": "ISC",
@@ -36,5 +37,8 @@
 		"normalize.css": "^8.0.1",
 		"slick-slider": "^1.8.2",
 		"webp-converter": "^2.2.3"
+	},
+	"dependencies": {
+		"aos": "^2.3.4"
 	}
 }
