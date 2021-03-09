@@ -4,8 +4,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="css/style.min.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Baby Toys</title>
 </head>
 
@@ -13,20 +13,19 @@
 	<!-- @@include('html/components/_preloader.html') -->
 	@@include('html/components/_header.html')
 	<div class="wrapper">
-		@@include('html/pages/corporate/_main.html')
-		@@include('html/pages/corporate/_about.html')
-		@@include('html/pages/corporate/_services.html')
-		@@include('html/pages/corporate/_fusion.html')
-		@@include('html/pages/corporate/_covid.html')
-		@@include('html/pages/corporate/_feedback.html')
+		@@include('html/pages/index/_main.html')
+		@@include('html/pages/corporate/_column-text.html')
+		@@include('html/pages/index/_services.html')
+		@@include('html/pages/index/_fusion.html')
+		@@include('html/pages/index/_covid.html')
 		@@include('html/components/_footer.html')
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<script src="js/script.min.js"></script>
-    <script>
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
         AOS.init();
-      </script>
+	</script>
+	<script src="js/script.min.js"></script>
 </body>
 
 </html>
