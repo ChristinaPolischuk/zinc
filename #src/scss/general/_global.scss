@@ -99,8 +99,7 @@ a {
 	top: 0;
 }
 
-.section,
-.footer {
+.section {
 	position: sticky;
 	top: 0;
 	@for $i from 1 through 5 {
