@@ -1,14 +1,19 @@
 .header {
+	padding: 60px 0;
 	position: fixed;
-	z-index: 2;
-	top: 60px;
+	z-index: 100;
+	top: 0;
 	left: 0;
 	right: 0;
+	transition: transform 0.3s;
 	@media screen and(max-width: 1200px) {
 		top: 30px;
 	}
 	@media screen and(max-width: 576px) {
 		top: 15px;
+	}
+	&.shrink {
+		transform: translateY(-100%);
 	}
 	&__content {
 		display: flex;
