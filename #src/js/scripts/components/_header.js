@@ -1,6 +1,6 @@
 $(document).on("scroll", function () {
 	if
-		($(document).scrollTop() > 100) {
+		($(document).scrollTop() > 50) {
 		$(".header").addClass("shrink");
 	}
 	else {
