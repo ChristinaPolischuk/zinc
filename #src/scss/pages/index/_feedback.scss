@@ -1,6 +1,21 @@
 .section-feedback {
+	overflow: hidden;
 	&::after {
 		background-image: url(../img/pages/index/about_bg.jpg);
+		// background-repeat: repeat-y;
+	}
+	&__content {
+		min-height: 100vh;
+		margin-top: 20vh;
+	}
+	&__block {
+		width: 100%;
+		margin-bottom: 50px;
+	}
+	.content-wrapper {
+		width: calc(100% + 20px);
+		overflow-y: scroll;
+		padding-right: 15px;
 	}
 }
 
