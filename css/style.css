@@ -455,6 +455,10 @@ body {
   color: #fff;
 }
 
+body.fixed {
+  overflow: hidden;
+}
+
 :root {
   -ms-scroll-snap-type: mandatory;
       scroll-snap-type: mandatory;
@@ -901,12 +905,12 @@ a {
 
 .dropdown-menu__link {
   display: block;
-  font-size: 64px;
-  line-height: 74px;
+  font-size: 54px;
+  line-height: 64px;
 }
 
 .dropdown-menu__link-small {
-  font-size: 32px;
+  font-size: 22px;
   margin-right: 25px;
 }
 
