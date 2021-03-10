@@ -901,7 +901,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     pin: '.anchor',
     start: 'top top',
     endtrigger: '.section-feedback__content',
-    //end: 'bottom top-=' + window.innerHeight, 
+    //end: 'bottom top-=' + window.innerHeight,
     end: function end() {
       return 'bottom top-=' + window.innerHeight;
     }
@@ -928,8 +928,9 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   // 	end: '+=100%',
   // 	scrub: 1,
   // 	// animation: fadeInElements
-  // });
+  // })
 
+  ;
   $(document).on("scroll", function () {
     if ($(document).scrollTop() > 50) {
       $(".header").addClass("shrink");

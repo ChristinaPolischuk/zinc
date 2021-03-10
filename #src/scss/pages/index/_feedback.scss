@@ -1,5 +1,8 @@
 .section-feedback {
 	overflow: hidden;
+	&::after {
+		background-image: url(../img/pages/index/about_bg.jpg);
+	}
 	&__block {
 		width: 100%;
 		margin-bottom: 50px;

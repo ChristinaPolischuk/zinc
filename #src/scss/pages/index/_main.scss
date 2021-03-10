@@ -1,4 +1,7 @@
 .section-main {
+	&::after {
+		background-image: url(../img/pages/index/ZincStudio.jpg);
+	}
 	&__content {
 		position: relative;
 	}
