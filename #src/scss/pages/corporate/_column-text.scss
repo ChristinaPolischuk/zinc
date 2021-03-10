@@ -1,16 +1,16 @@
 .section-column-text {
-  padding: 5rem 0 2rem;
+  padding: 5rem 0 0;
   &::after {
     background-image: url(../img/pages/corporate/about_bg.jpg);
   }
   &__wrapper {
     position: relative;
-    height: 100vh;
+    min-height: 110vh;
   }
   &__content {
-    position: absolute;
+    position: sticky;
     z-index: 1;
-    top: 0;
+    top: 25vh;
     right: 0;
     bottom: 0;
     left: 0;
@@ -18,62 +18,64 @@
     max-width: 895px;
     min-height: auto;
   }
+  &__areas {
+    margin-top: 6rem;
+  }
+  &__area {
+    position: relative;
+    &-image {
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      height: auto;
+      object-fit: contain;
+      &.image-1 {
+        width: 60%;
+        z-index: 1;
+        padding-bottom: 12rem;
+      }
+      &.image-2 {
+        z-index: 4;
+        width: 46%;
+        top: 24rem;
+      }
+      &.image-3 {
+        z-index: 3;
+        top: 3.2rem;
+        margin-left: -2rem;
+        padding-bottom: 12rem;
+      }
+      &.image-4 {
+        z-index: 2;
+        width: 56%;
+        top: 19.5rem;
+        left: 50%;
+      }
+    }
+    &-text {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      padding-top: 5rem;
+      max-width: 15rem;
+      right: auto;
+      bottom: auto;
+      &.text-1 {
+        z-index: 2;
+        top: 11rem;
+        left: 55.5%;
+      }
+      &.text-2 {
+        z-index: 5;
+        top: 42.5rem;
+        left: 9%;
+      }
+    }
+  }
   &__text {
     margin: 0;
-  }
-  .content-wrapper {
-    //overflow: auto;
   }
 }
 .btn-download {
   width: 33%;
-}
-.section-column-text {
-  &__areas {
-    position: sticky;
-    height: 900px;
-    top: 0;
-    .first-block {
-      div:nth-child(1) {
-        background-image: url(../img/pages/corporate/areas-block1.png);
-        background-repeat: no-repeat;
-        height: 656px;
-        background-size: contain;
-      }
-      div:nth-child(2) {
-        position: absolute;
-        width: 20%;
-        left: 42%;
-        top: 70%;
-      }
-    }
-    .second-block {
-      div:nth-child(1) {
-        background-image: url(../img/pages/corporate/areas-block2.png);
-        background-repeat: no-repeat;
-        height: 400px;
-        background-size: contain;
-      }
-      div:nth-child(2) {
-        background-image: url(../img/pages/corporate/areas-block3.png);
-        background-repeat: no-repeat;
-        height: 554px;
-        background-size: contain;
-      }
-      div:nth-child(3) {
-        position: absolute;
-        width: 20%;
-        left: 42%;
-        top: 70%;
-      }
-    }
-    .third-block {
-      div:nth-child(1) {
-        background-image: url(../img/pages/corporate/areas-block4.png);
-        background-repeat: no-repeat;
-        height: 488px;
-        background-size: contain;
-      }
-    }
-  }
 }
