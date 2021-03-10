@@ -526,7 +526,7 @@ a {
 }
 
 .section {
-  padding: 30px 0;
+  overflow: hidden;
   position: absolute;
   will-change: transform;
   width: 100%;
@@ -553,10 +553,11 @@ a {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  background-repeat: repeat-y;
+  background-repeat: no-repeat;
 }
 
 .section-content {
+  padding: 30px 0;
   min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -572,6 +573,7 @@ a {
 
 .section-inner {
   max-width: 890px;
+  padding: 30px 0;
   margin: 0 auto;
   min-height: 100vh;
   display: -webkit-box;
@@ -602,6 +604,37 @@ a {
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.overlay {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.overlay__corporate {
+  right: 0;
+  background: url(../img/general/overlay/corporate.jpg) no-repeat center/cover;
+}
+
+.overlay__wedding {
+  left: 0;
+  background: url(../img/general/overlay/wedding.jpg) no-repeat center/cover;
+}
+
+.overlay__private {
+  right: 0;
+  background: url(../img/general/overlay/private.jpg) no-repeat center/cover;
+}
+
+.overlay.show {
+  opacity: 1;
 }
 
 .header {
@@ -1011,6 +1044,8 @@ a {
 
 .section-title span {
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-download {
@@ -1265,5 +1300,11 @@ a {
     text-align: center;
   }
 }
+
+.webp .overlay__corporate { background: url(../img/general/overlay/corporate.webp) no-repeat center/cover; }
+
+.webp .overlay__wedding { background: url(../img/general/overlay/wedding.webp) no-repeat center/cover; }
+
+.webp .overlay__private { background: url(../img/general/overlay/private.webp) no-repeat center/cover; }
 
 .webp .btn-download { background: url(../img/general/download_icon.webp) 95% 30% no-repeat; }
