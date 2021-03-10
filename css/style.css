@@ -441,7 +441,7 @@ html {
   overflow-scrolling: touch;
 }
 
-html.fixed body {
+html.fixed {
   overflow: hidden;
 }
 
