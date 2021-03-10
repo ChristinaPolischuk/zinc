@@ -1412,6 +1412,86 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
      object-fit: contain;
 }
 
+.section-plans .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.section-plans .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-plans .button-wrapper .btn-download:nth-child(2) {
+  background: url(../img/general/arrow.svg) 96% 30% no-repeat;
+}
+
+.section-food {
+  padding: 10rem 0 0;
+}
+
+.section-food:after {
+  background-image: url(../img/pages/corporate/food-bg.png);
+}
+
+.section-food .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.section-food .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-team {
+  padding: 10rem 0 0;
+}
+
+.section-team:after {
+  background-image: url(../img/pages/corporate/team-bg.png);
+}
+
+.section-team .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.section-team .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 1200px) {
   .section-subtitle {
     font-size: 22px;
@@ -1552,3 +1632,7 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 .webp .section-feedback::after { background-image: url(../img/pages/index/about_bg.webp); }
 
 .webp .section-column-text::after { background-image: url(../img/pages/corporate/about_bg.webp); }
+
+.webp .section-food:after { background-image: url(../img/pages/corporate/food-bg.webp); }
+
+.webp .section-team:after { background-image: url(../img/pages/corporate/team-bg.webp); }
