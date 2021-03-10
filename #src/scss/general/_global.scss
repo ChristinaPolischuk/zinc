@@ -7,12 +7,12 @@
 
 html {
 	font-size: $base_font_size;
+	margin: 0;
 	height: 100%;
+	-webkit-overflow-scrolling: touch;
+	overflow-scrolling: touch;
 	&.fixed {
 		overflow: hidden;
-		body {
-			overflow: hidden;
-		}
 	}
 }
 
@@ -23,11 +23,12 @@ body {
 	line-height: $base_line_height;
 	font-weight: 400;
 	color: $white;
-}
 
-:root {
-	scroll-snap-type: mandatory;
-	scroll-snap-points-y: repeat(100vh);
+	overflow-x: hidden;
+	overflow-y: scroll;
+	&.fixed {
+		overflow: hidden;
+	}
 }
 
 h1,
@@ -80,9 +81,13 @@ a {
 	color: inherit;
 }
 
-.wrapper {
-	min-height: 100vh;
-	position: relative;
+.parallax-wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
 }
 
 .container {
@@ -91,31 +96,31 @@ a {
 	max-width: $content_size;
 }
 
-.content-wrapper {
-	//position: absolute;
-	//left: 0;
-	//right: 0;
-	//bottom: 0;
-	//top: 0;
-}
-
-.section,
-.footer {
-	//position: sticky;
-	//top: 0;
-	//@for $i from 1 through 6 {
-	//	&:nth-child(#{$i}) {
-	//		z-index: 6 - $i;
-	//		margin-top: -100vh * (6 - $i);
-	//		margin-bottom: 100vh * (6 - $i);
-	//
-	//		// last child
-	//		@if $i == 6 {
-	//			bottom: 0;
-	//		}
-	//	}
-	//}
-}
+//.content-wrapper {
+//	position: absolute;
+//	left: 0;
+//	right: 0;
+//	bottom: 0;
+//	top: 0;
+//}
+//
+//.section,
+//.footer {
+//	position: sticky;
+//	top: 0;
+//	@for $i from 1 through 6 {
+//		&:nth-child(#{$i}) {
+//			z-index: 6 - $i;
+//			margin-top: -100vh * (6 - $i);
+//			margin-bottom: 100vh * (6 - $i);
+//
+//			// last child
+//			@if $i == 6 {
+//				bottom: 0;
+//			}
+//		}
+//	}
+//}
 
 .section {
 	padding: 30px 0;
@@ -133,10 +138,10 @@ a {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		background-attachment: fixed;
 	}
 
 	&-content {
+		padding: 30px 0;
 		min-height: 100vh;
 		display: flex;
 		flex-direction: column;
@@ -144,6 +149,7 @@ a {
 	}
 	&-inner {
 		max-width: 890px;
+		padding: 30px 0;
 		margin: 0 auto;
 		min-height: 100vh;
 		display: flex;
@@ -199,5 +205,30 @@ html:not(.no-js) {
 				opacity: 0;
 			}
 		}
+	}
+}
+
+.overlay {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+	&__corporate {
+		right: 0;
+		background: url(../img/general/overlay/corporate.jpg) no-repeat center/cover;
+	}
+	&__wedding {
+		left: 0;
+		background: url(../img/general/overlay/wedding.jpg) no-repeat center/cover;
+	}
+	&__private {
+		right: 0;
+		background: url(../img/general/overlay/private.jpg) no-repeat center/cover;
+	}
+	&.show {
+		opacity: 1;
 	}
 }
