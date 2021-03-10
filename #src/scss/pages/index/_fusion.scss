@@ -12,6 +12,25 @@
 			justify-content: center;
 			.btn-wrapper {
 				margin: 10rem 0;
+				.btn {
+					padding: 1.6rem 6rem;
+					font-size: 2rem;
+					position: relative;
+					&:before {
+						content: "";
+						position: absolute;
+						z-index: 0;
+						top: 0;
+						bottom: 0;
+						right: -23px;
+    					left: -16px;
+						pointer-events: none;
+						background-image: url(../img/general/rectangle_glow.svg);
+						background-size: 100%;
+						background-repeat: no-repeat;
+						background-position: 50%;
+					}
+				}
 			}
 		}
 	}
@@ -68,12 +87,13 @@
 			line-height: 91px;
 			&.text-1 {
 				z-index: 3;
-				top: 7rem;
+				padding-top: 10rem;
+				top: 15rem;
 				left: 7.5%;
 			}
 			&.text-2 {
 				z-index: 3;
-				top: 7rem;
+				top: 20rem;
 				left: auto;
 				right: 16%;
 				max-width: 19rem;

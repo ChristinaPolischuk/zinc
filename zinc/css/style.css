@@ -692,8 +692,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover::after {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
@@ -1051,6 +1051,27 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin: 10rem 0;
 }
 
+.section-fusion__wrapper.-with-btn .btn-wrapper .btn {
+  padding: 1.6rem 6rem;
+  font-size: 2rem;
+  position: relative;
+}
+
+.section-fusion__wrapper.-with-btn .btn-wrapper .btn:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  right: -23px;
+  left: -16px;
+  pointer-events: none;
+  background-image: url(../img/general/rectangle_glow.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
 .section-fusion__areas {
   margin-top: 6rem;
 }
@@ -1118,13 +1139,14 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 
 .section-fusion__area-text.text-1 {
   z-index: 3;
-  top: 7rem;
+  padding-top: 10rem;
+  top: 15rem;
   left: 7.5%;
 }
 
 .section-fusion__area-text.text-2 {
   z-index: 3;
-  top: 7rem;
+  top: 20rem;
   left: auto;
   right: 16%;
   max-width: 19rem;
