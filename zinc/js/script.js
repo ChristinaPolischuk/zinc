@@ -876,6 +876,7 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   var $dropdownrMenu = $('.dropdown-menu');
   $burgerMenu.on('click', function () {
     $(this).toggleClass('closed');
+    $('body').toggleClass('fixed');
     $dropdownrMenu.toggleClass('opened');
   });
   ;
