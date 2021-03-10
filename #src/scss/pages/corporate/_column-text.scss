@@ -1,7 +1,7 @@
 .section-column-text {
   padding: 5rem 0 2rem;
   &::after {
-    background-image: url(../img/pages/corporate/column-text_bg.png);
+    background-image: url(../img/pages/corporate/about_bg.jpg);
   }
   &__wrapper {
     position: relative;
@@ -25,5 +25,55 @@
     //overflow: auto;
   }
 }
-
-
+.btn-download {
+  width: 33%;
+}
+.section-column-text {
+  &__areas {
+    position: sticky;
+    height: 900px;
+    top: 0;
+    .first-block {
+      div:nth-child(1) {
+        background-image: url(../img/pages/corporate/areas-block1.png);
+        background-repeat: no-repeat;
+        height: 656px;
+        background-size: contain;
+      }
+      div:nth-child(2) {
+        position: absolute;
+        width: 20%;
+        left: 42%;
+        top: 70%;
+      }
+    }
+    .second-block {
+      div:nth-child(1) {
+        background-image: url(../img/pages/corporate/areas-block2.png);
+        background-repeat: no-repeat;
+        height: 400px;
+        background-size: contain;
+      }
+      div:nth-child(2) {
+        background-image: url(../img/pages/corporate/areas-block3.png);
+        background-repeat: no-repeat;
+        height: 554px;
+        background-size: contain;
+      }
+      div:nth-child(3) {
+        position: absolute;
+        width: 20%;
+        left: 42%;
+        top: 70%;
+      }
+    }
+    .third-block {
+      div:nth-child(1) {
+        background-image: url(../img/pages/corporate/areas-block4.png);
+        background-repeat: no-repeat;
+        height: 488px;
+        background-size: contain;
+      }
+    }
+  }
+}
