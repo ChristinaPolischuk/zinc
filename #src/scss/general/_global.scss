@@ -12,9 +12,7 @@ html {
 	-webkit-overflow-scrolling: touch;
 	overflow-scrolling: touch;
 	&.fixed {
-		body {
-			overflow: hidden;
-		}
+		overflow: hidden;
 	}
 }
 
