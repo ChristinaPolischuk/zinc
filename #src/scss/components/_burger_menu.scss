@@ -4,13 +4,14 @@
 	width: 31px;
 	height: 25px;
 	overflow: hidden;
-	&::after {
+	&__text {
 		content: "MENU";
 		position: absolute;
 		top: 25px;
 		right: 0;
 		left: 0;
 		color: #fff;
+		text-transform: uppercase;
 		font-size: 10px;
 		line-height: 10px;
 		font-weight: bold;
@@ -40,7 +41,7 @@
 		.burger-menu__line:nth-child(2) {
 			left: 31px;
 		}
-		&::after {
+		.burger-menu__text {
 			animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards,
 				shakeWhileMovingDown 0.2s ease 0.8s forwards;
 		}

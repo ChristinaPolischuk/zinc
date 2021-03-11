@@ -1,9 +1,9 @@
 $(document).on("scroll", function () {
 	if
 		($(document).scrollTop() > 50) {
-		$(".header").addClass("shrink");
+		$(".header__logo").hide();
 	}
 	else {
-		$(".header").removeClass("shrink");
+		$(".header__logo").show();
 	}
 });
