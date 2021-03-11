@@ -15,20 +15,9 @@
 				.btn {
 					padding: 1.6rem 6rem;
 					font-size: 2rem;
-					position: relative;
 					&:before {
-						content: "";
-						position: absolute;
-						z-index: 0;
-						top: 0;
-						bottom: 0;
-						right: -23px;
-    					left: -16px;
-						pointer-events: none;
-						background-image: url(../img/general/rectangle_glow.svg);
-						background-size: 100%;
-						background-repeat: no-repeat;
-						background-position: 50%;
+						right: -22px;
+						left: -16px;
 					}
 				}
 			}

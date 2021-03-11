@@ -32,7 +32,26 @@
 	outline: none;
 	padding: 15px;
 	color: $white;
-	border: 1px solid $white;
+	border: 0;
+	position: relative;
+	transition: .4s;
+	&:before {
+		content: "";
+		position: absolute;
+		z-index: 0;
+		top: 0;
+		bottom: 0;
+		right: -14px;
+		left: -8px;
+		pointer-events: none;
+		background-image: url(../img/general/rectangle_glow.svg);
+		background-size: 102% 128%;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	}
+	&:hover {
+		opacity: 0.7;
+	}
 	span {
 		display: block;
 		text-align: left;

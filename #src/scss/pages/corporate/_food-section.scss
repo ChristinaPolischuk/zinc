@@ -3,6 +3,74 @@
   &:after {
     background-image: url(../img/pages/corporate/food-bg.png);
   }
+  &__wrapper {
+    position: relative;
+    //min-height: 110vh;
+    min-height: 140vh;
+    &.wrapper-1 {
+      min-height: 100vh;
+    }
+  }
+  &__content {
+    position: sticky;
+    z-index: 1;
+    top: 25vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    max-width: 895px;
+    min-height: auto;
+  }
+  &__areas {
+    margin-top: 6rem;
+  }
+  &__area {
+    position: relative;
+    &-image {
+      position: sticky;
+      z-index: 1;
+      top: 0;
+      height: auto;
+      object-fit: contain;
+      &.image-1 {
+        width: 77%;
+        z-index: 1;
+        left: 0;
+        padding-bottom: 0;
+      }
+      &.image-2 {
+        z-index: 2;
+        width: 40%;
+        top: 4rem;
+        left: 100%;
+        padding-bottom: 4.5em;
+        margin-top: -50rem;
+      }
+      &.image-3 {
+        z-index: 3;
+        width: 43%;
+        top: 0;
+        right: 46%;
+        padding-bottom: 12rem;
+      }
+      &.image-4 {
+        z-index: 4;
+        width: 68%;
+        min-height: 90vh;
+        top: 10rem;
+        left: 0;
+        right: 0;
+        margin: auto;
+        display: block;
+        margin-top: 2rem;
+        padding-bottom: 5rem;
+      }
+    }
+  }
+  &__text {
+    margin: 0;
+  }
   .button-wrapper {
     display: flex;
     flex-direction: column;
