@@ -1,9 +1,9 @@
 .private {
   .section-column-text {
-    padding: 5rem 0 0;
+    padding: 5rem 0;
 
     &::after {
-      background-image: url(../img/pages/corporate/about_bg.jpg);
+      background-image: url(../img/pages/private/column-bg.png);
     }
 
     &__wrapper {
@@ -88,7 +88,7 @@
     }
 
     &__text {
-      margin: 0;
+      margin-bottom: 1rem;
     }
   }
 

@@ -1,7 +1,6 @@
 .about {
   .section-food {
     padding: 5rem 0 0;
-
     &:after {
       background-image: url(../img/pages/about/food_bg.jpg);
     }
@@ -99,4 +98,9 @@
       }
     }
   }
+}
+.topic {
+  font-weight: 100;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
