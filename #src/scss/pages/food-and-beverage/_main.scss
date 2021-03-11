@@ -1,40 +1,46 @@
-.section-main {
-	&::after {
-		background-image: url(../img/pages/index/ZincStudio.jpg);
-	}
-	&__content {
-		position: relative;
-	}
-	&__title {
-		margin: 40px 0;
-		font-size: 6rem;
-		text-align: left;
-		line-height: 6rem;
-		@media screen and(max-width: 1200px) {
-			font-size: 150px;
-			line-height: 150px;
-			margin: 20px 0;
+.food-and-beverage {
+	.section-main {
+		&::after {
+			background-image: url(../img/pages/index/ZincStudio.jpg);
 		}
-		@media screen and(max-width: 576px) {
-			font-size: 95px;
-			line-height: 95px;
-			margin: 10px 0;
+
+		&__content {
+			position: relative;
 		}
-	}
-	&__subtitle {
-		span {
-			display: block;
+
+		&__title {
+			margin: 40px 0;
+			font-size: 6rem;
+			text-align: left;
+			line-height: 6rem;
+			@media screen and(max-width: 1200px) {
+				font-size: 150px;
+				line-height: 150px;
+				margin: 20px 0;
+			}
+			@media screen and(max-width: 576px) {
+				font-size: 95px;
+				line-height: 95px;
+				margin: 10px 0;
+			}
 		}
-	}
-	&__link {
-		position: absolute;
-		left: 0;
-		bottom: 60px;
-		@media screen and(max-width: 1200px) {
-			bottom: 30px;
+
+		&__subtitle {
+			span {
+				display: block;
+			}
 		}
-		@media screen and(max-width: 576px) {
-			bottom: 15px;
+
+		&__link {
+			position: absolute;
+			left: 0;
+			bottom: 60px;
+			@media screen and(max-width: 1200px) {
+				bottom: 30px;
+			}
+			@media screen and(max-width: 576px) {
+				bottom: 15px;
+			}
 		}
 	}
 }
