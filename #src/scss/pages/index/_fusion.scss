@@ -23,7 +23,7 @@
 						top: 0;
 						bottom: 0;
 						right: -23px;
-    					left: -16px;
+						left: -16px;
 						pointer-events: none;
 						background-image: url(../img/general/rectangle_glow.svg);
 						background-size: 100%;
@@ -100,7 +100,8 @@
 			}
 			&.text-3 {
 				z-index: 5;
-				top: 63rem;
+				// top: 63rem;
+				top: 43rem;
 				left: 20%;
 			}
 		}
@@ -109,4 +110,3 @@
 		margin: 0;
 	}
 }
-
