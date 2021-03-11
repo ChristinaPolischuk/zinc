@@ -1,11 +1,9 @@
 .private {
   .section-food {
     padding: 10rem 0 0;
-
     &:after {
       background-image: url(../img/pages/corporate/food-bg.png);
     }
-
     &__wrapper {
       position: relative;
       //min-height: 110vh;

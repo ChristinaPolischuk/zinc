@@ -718,8 +718,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover .burger-menu__text {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
@@ -2270,6 +2270,691 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   width: 33%;
 }
 
+.wedding .section-food {
+  padding: 10rem 0 0;
+}
+
+.wedding .section-food:after {
+  background-image: url(../img/pages/corporate/food-bg.png);
+}
+
+.wedding .section-food__wrapper {
+  position: relative;
+  min-height: 140vh;
+}
+
+.wedding .section-food__wrapper.wrapper-1 {
+  min-height: 100vh;
+}
+
+.wedding .section-food__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.wedding .section-food__areas {
+  margin-top: 6rem;
+}
+
+.wedding .section-food__area {
+  position: relative;
+}
+
+.wedding .section-food__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.wedding .section-food__area-image.image-1 {
+  width: 77%;
+  z-index: 1;
+  left: 0;
+  padding-bottom: 0;
+}
+
+.wedding .section-food__area-image.image-2 {
+  z-index: 2;
+  width: 40%;
+  top: 4rem;
+  left: 100%;
+  padding-bottom: 4.5em;
+  margin-top: -50rem;
+}
+
+.wedding .section-food__area-image.image-3 {
+  z-index: 3;
+  width: 43%;
+  top: 0;
+  right: 46%;
+  padding-bottom: 12rem;
+}
+
+.wedding .section-food__area-image.image-4 {
+  z-index: 4;
+  width: 68%;
+  min-height: 90vh;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.wedding .section-food__text {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.wedding .section-food .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.wedding .section-food .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.private .section-column-text {
+  padding: 5rem 0;
+}
+
+.private .section-column-text::after {
+  background-image: url(../img/pages/private/column-bg.png);
+}
+
+.private .section-column-text__wrapper {
+  position: relative;
+  min-height: 110vh;
+}
+
+.private .section-column-text__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.private .section-column-text__areas {
+  margin-top: 6rem;
+}
+
+.private .section-column-text__area {
+  position: relative;
+}
+
+.private .section-column-text__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.private .section-column-text__area-image.image-1 {
+  width: 60%;
+  z-index: 1;
+  padding-bottom: 12rem;
+}
+
+.private .section-column-text__area-image.image-2 {
+  z-index: 4;
+  width: 46%;
+  top: 24rem;
+}
+
+.private .section-column-text__area-image.image-3 {
+  z-index: 3;
+  top: 3.2rem;
+  margin-left: -2rem;
+  padding-bottom: 12rem;
+}
+
+.private .section-column-text__area-image.image-4 {
+  z-index: 2;
+  width: 56%;
+  top: 19.5rem;
+  left: 50%;
+}
+
+.private .section-column-text__area-text {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  padding-top: 5rem;
+  max-width: 15rem;
+  right: auto;
+  bottom: auto;
+}
+
+.private .section-column-text__area-text.text-1 {
+  z-index: 2;
+  top: 11rem;
+  left: 55.5%;
+}
+
+.private .section-column-text__area-text.text-2 {
+  z-index: 5;
+  top: 42.5rem;
+  left: 9%;
+}
+
+.private .section-column-text__text {
+  margin-bottom: 1rem;
+}
+
+.private .btn-download {
+  width: 33%;
+}
+
+.private .section-column-text-passionate {
+  padding: 5rem 0 0;
+}
+
+.private .section-column-text-passionate::after {
+  background-image: url(../img/pages/private/passionate-bg.png);
+}
+
+.private .section-column-text-passionate__wrapper {
+  position: relative;
+  min-height: 110vh;
+}
+
+.private .section-column-text-passionate__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.private .section-column-text-passionate__areas {
+  margin-top: 6rem;
+}
+
+.private .section-column-text-passionate__area {
+  position: relative;
+}
+
+.private .section-column-text-passionate__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.private .section-column-text-passionate__area-image.image-1 {
+  width: 60%;
+  z-index: 1;
+  padding-bottom: 12rem;
+}
+
+.private .section-column-text-passionate__area-image.image-2 {
+  z-index: 4;
+  width: 46%;
+  top: 24rem;
+}
+
+.private .section-column-text-passionate__area-image.image-3 {
+  z-index: 3;
+  top: 3.2rem;
+  margin-left: -2rem;
+  padding-bottom: 12rem;
+}
+
+.private .section-column-text-passionate__area-image.image-4 {
+  z-index: 2;
+  width: 56%;
+  top: 19.5rem;
+  left: 50%;
+}
+
+.private .section-column-text-passionate__area-text {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  padding-top: 5rem;
+  max-width: 15rem;
+  right: auto;
+  bottom: auto;
+}
+
+.private .section-column-text-passionate__area-text.text-1 {
+  z-index: 2;
+  top: 11rem;
+  left: 55.5%;
+}
+
+.private .section-column-text-passionate__area-text.text-2 {
+  z-index: 5;
+  top: 42.5rem;
+  left: 9%;
+}
+
+.private .section-column-text-passionate__text {
+  margin-bottom: 1rem;
+}
+
+.private .btn-download {
+  width: 33%;
+}
+
+.private .section-food {
+  padding: 10rem 0 0;
+}
+
+.private .section-food:after {
+  background-image: url(../img/pages/corporate/food-bg.png);
+}
+
+.private .section-food__wrapper {
+  position: relative;
+  min-height: 140vh;
+}
+
+.private .section-food__wrapper.wrapper-1 {
+  min-height: 100vh;
+}
+
+.private .section-food__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.private .section-food__areas {
+  margin-top: 6rem;
+}
+
+.private .section-food__area {
+  position: relative;
+}
+
+.private .section-food__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.private .section-food__area-image.image-1 {
+  width: 77%;
+  z-index: 1;
+  left: 0;
+  padding-bottom: 0;
+}
+
+.private .section-food__area-image.image-2 {
+  z-index: 2;
+  width: 40%;
+  top: 4rem;
+  left: 100%;
+  padding-bottom: 4.5em;
+  margin-top: -50rem;
+}
+
+.private .section-food__area-image.image-3 {
+  z-index: 3;
+  width: 43%;
+  top: 0;
+  right: 46%;
+  padding-bottom: 12rem;
+}
+
+.private .section-food__area-image.image-4 {
+  z-index: 4;
+  width: 68%;
+  min-height: 90vh;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.private .section-food__text {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.private .section-food .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.private .section-food .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.section-main::after {
+  background-image: url(../img/pages/index/ZincStudio.jpg);
+}
+
+.section-main__content {
+  position: relative;
+}
+
+.section-main__title {
+  margin: 40px 0;
+  font-size: 6rem;
+  text-align: left;
+  line-height: 6rem;
+}
+
+.section-main__subtitle span {
+  display: block;
+}
+
+.section-main__link {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+
+.food-and-beverage .section-column-text {
+  padding: 5rem 0;
+}
+
+.food-and-beverage .section-column-text::after {
+  background-image: url(../img/pages/food-and-beverage/column-bg.png);
+}
+
+.food-and-beverage .section-column-text__wrapper {
+  position: relative;
+  min-height: 110vh;
+}
+
+.food-and-beverage .section-column-text__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.food-and-beverage .section-column-text__areas {
+  margin-top: 6rem;
+}
+
+.food-and-beverage .section-column-text__area {
+  position: relative;
+}
+
+.food-and-beverage .section-column-text__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.food-and-beverage .section-column-text__area-image.image-1 {
+  width: 60%;
+  z-index: 1;
+  padding-bottom: 12rem;
+}
+
+.food-and-beverage .section-column-text__area-image.image-2 {
+  z-index: 4;
+  width: 46%;
+  top: 24rem;
+}
+
+.food-and-beverage .section-column-text__area-image.image-3 {
+  z-index: 3;
+  top: 3.2rem;
+  margin-left: -2rem;
+  padding-bottom: 12rem;
+}
+
+.food-and-beverage .section-column-text__area-image.image-4 {
+  z-index: 2;
+  width: 56%;
+  top: 19.5rem;
+  left: 50%;
+}
+
+.food-and-beverage .section-column-text__area-text {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  padding-top: 5rem;
+  max-width: 15rem;
+  right: auto;
+  bottom: auto;
+}
+
+.food-and-beverage .section-column-text__area-text.text-1 {
+  z-index: 2;
+  top: 11rem;
+  left: 55.5%;
+}
+
+.food-and-beverage .section-column-text__area-text.text-2 {
+  z-index: 5;
+  top: 42.5rem;
+  left: 9%;
+}
+
+.food-and-beverage .section-column-text__text {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.food-and-beverage .section-column-text__text:nth-child(1) {
+  font-weight: 100;
+  font-size: 1.2rem;
+}
+
+.food-and-beverage .btn-download {
+  width: 33%;
+}
+
+.food-and-beverage .section-food {
+  padding: 10rem 0 0;
+}
+
+.food-and-beverage .section-food:after {
+  background-image: url(../img/pages/corporate/food-bg.png);
+}
+
+.food-and-beverage .section-food__wrapper {
+  position: relative;
+  min-height: 140vh;
+}
+
+.food-and-beverage .section-food__wrapper.wrapper-1 {
+  min-height: 100vh;
+}
+
+.food-and-beverage .section-food__content {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 25vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  max-width: 895px;
+  min-height: auto;
+}
+
+.food-and-beverage .section-food__areas {
+  margin-top: 6rem;
+}
+
+.food-and-beverage .section-food__area {
+  position: relative;
+}
+
+.food-and-beverage .section-food__area-image {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.food-and-beverage .section-food__area-image.image-1 {
+  width: 77%;
+  z-index: 1;
+  left: 0;
+  padding-bottom: 0;
+}
+
+.food-and-beverage .section-food__area-image.image-2 {
+  z-index: 2;
+  width: 40%;
+  top: 4rem;
+  left: 100%;
+  padding-bottom: 4.5em;
+  margin-top: -50rem;
+}
+
+.food-and-beverage .section-food__area-image.image-3 {
+  z-index: 3;
+  width: 43%;
+  top: 0;
+  right: 46%;
+  padding-bottom: 12rem;
+}
+
+.food-and-beverage .section-food__area-image.image-4 {
+  z-index: 4;
+  width: 68%;
+  min-height: 90vh;
+  top: 10rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.food-and-beverage .section-food__text {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.food-and-beverage .section-food .button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15rem 0;
+}
+
+.food-and-beverage .section-food .button-wrapper .btn-download {
+  width: 22%;
+  height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.about .section-main::after {
+  background-image: url(../img/pages/about/about-header.png);
+}
+
+.about .section-main__content {
+  position: relative;
+}
+
+.about .section-main__title {
+  margin: 40px 0;
+  font-size: 6rem;
+  text-align: left;
+}
+
+.about .section-main__subtitle span {
+  display: block;
+}
+
+.about .section-main__link {
+  position: absolute;
+  left: 0;
+  bottom: 60px;
+}
+
 .about .section-column-text {
   padding: 5rem 0;
 }
@@ -2491,6 +3176,12 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 .about .section-food .button-wrapper .btn-download {
   width: 22%;
   height: 3.4rem;
+  margin-bottom: 1rem;
+}
+
+.topic {
+  font-weight: 100;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
@@ -2794,6 +3485,26 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   .section-main__link {
     bottom: 30px;
   }
+
+  .section-main__title {
+    font-size: 150px;
+    line-height: 150px;
+    margin: 20px 0;
+  }
+
+  .section-main__link {
+    bottom: 30px;
+  }
+
+  .about .section-main__title {
+    font-size: 150px;
+    line-height: 150px;
+    margin: 20px 0;
+  }
+
+  .about .section-main__link {
+    bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -2866,6 +3577,26 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   }
 
   .section-main__link {
+    bottom: 15px;
+  }
+
+  .section-main__title {
+    font-size: 95px;
+    line-height: 95px;
+    margin: 10px 0;
+  }
+
+  .section-main__link {
+    bottom: 15px;
+  }
+
+  .about .section-main__title {
+    font-size: 95px;
+    line-height: 95px;
+    margin: 10px 0;
+  }
+
+  .about .section-main__link {
     bottom: 15px;
   }
 }
@@ -2945,6 +3676,22 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 .webp .wedding .section-column-text::after { background-image: url(../img/pages/wedding/column-bg.webp); }
 
 .webp .wedding .section-column-text-passionate::after { background-image: url(../img/pages/wedding/passionate-bg.webp); }
+
+.webp .wedding .section-food:after { background-image: url(../img/pages/corporate/food-bg.webp); }
+
+.webp .private .section-column-text::after { background-image: url(../img/pages/private/column-bg.webp); }
+
+.webp .private .section-column-text-passionate::after { background-image: url(../img/pages/private/passionate-bg.webp); }
+
+.webp .private .section-food:after { background-image: url(../img/pages/corporate/food-bg.webp); }
+
+.webp .section-main::after { background-image: url(../img/pages/index/ZincStudio.webp); }
+
+.webp .food-and-beverage .section-column-text::after { background-image: url(../img/pages/food-and-beverage/column-bg.webp); }
+
+.webp .food-and-beverage .section-food:after { background-image: url(../img/pages/corporate/food-bg.webp); }
+
+.webp .about .section-main::after { background-image: url(../img/pages/about/about-header.webp); }
 
 .webp .about .section-column-text::after { background-image: url(../img/pages/about/column-text_bg.webp); }
 
