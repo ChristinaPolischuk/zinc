@@ -1,4 +1,4 @@
-.home {
+.about {
 	.section-fusion {
 		padding: 5rem 0 0;
 
@@ -8,7 +8,7 @@
 
 		&__wrapper {
 			position: relative;
-			min-height: 110vh;
+			min-height: 170vh;
 
 			&.-with-btn {
 				display: flex;
@@ -46,36 +46,39 @@
 				object-fit: contain;
 
 				&.image-1 {
-					z-index: 2;
-					top: 59vh;
-					width: 17.6rem;
-					height: 15rem;
+					z-index: 1;
+					top: 25vh;
+					width: 23.8rem;
+					height: 15.6rem;
 					object-fit: cover;
+					box-sizing: content-box;
+					padding-top: 10rem;
 				}
 
 				&.image-2 {
-					z-index: 2;
+					z-index: 1;
 					width: 47%;
-					top: 0;
+					top: 5rem;
 					left: 43%;
-					margin-top: 15%;
-					padding-bottom: 18rem;
+					padding-bottom: 0;
+					margin-bottom: 20rem;
 				}
 
 				&.image-3 {
-					z-index: 1;
+					z-index: 2;
 					top: 0;
 					right: 100%;
 					margin-left: 9%;
-					padding-bottom: 12rem;
+					padding-bottom: 17rem;
+					margin-top: -15rem;
 				}
 
 				&.image-4 {
-					z-index: 4;
-					width: 60%;
-					height: 13rem;
+					z-index: 3;
+					width: 32%;
+					height: 26rem;
 					top: 27rem;
-					left: 100%;
+					right: 25%;
 					object-fit: cover;
 				}
 			}
@@ -87,28 +90,34 @@
 				padding-top: 5rem;
 				right: auto;
 				bottom: auto;
-				font-size: 100px;
-				line-height: 91px;
-
+				font-size: 99px;
+				line-height: 106px;
 				&.text-1 {
 					z-index: 3;
-					padding-top: 10rem;
-					top: 15rem;
-					left: 7.5%;
+					padding-top: 1rem;
+					top: 0;
+					left: 34.5%;
+					max-width: 28rem;
 				}
-
 				&.text-2 {
 					z-index: 3;
-					top: 20rem;
-					left: auto;
-					right: 16%;
-					max-width: 19rem;
+					top: 12rem;
+					left: 6%;
+					right: auto;
+					max-width: 25rem;
 				}
-
 				&.text-3 {
 					z-index: 5;
-					top: 63rem;
-					left: 20%;
+					top: 10rem;
+					left: 43%;
+					padding-top: 30rem;
+					max-width: 20rem;
+				}
+				&.text-4 {
+					z-index: 5;
+					top: 37rem;
+					left: 18%;
+					padding-top: 15rem;
 				}
 			}
 		}

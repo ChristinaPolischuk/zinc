@@ -1,9 +1,9 @@
-.corporate {
+.about {
   .section-column-text {
-    padding: 5rem 0 0;
+    padding: 5rem 0;
 
     &::after {
-      background-image: url(../img/pages/corporate/about_bg.jpg);
+      background-image: url(../img/pages/about/column-text_bg.jpg);
     }
 
     &__wrapper {

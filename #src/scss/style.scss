@@ -3,13 +3,20 @@
 @import "general/vars";
 @import "general/mixins";
 @import "general/global";
+
 @import "components/components";
+
 @import "pages/index/main";
 @import "pages/index/about";
 @import "pages/index/services";
 @import "pages/index/fusion";
 @import "pages/index/feedback";
+
 @import "pages/corporate/column-text";
 @import "pages/corporate/floor-plans";
 @import "pages/corporate/food-section";
 @import "pages/corporate/tailored-team";
+
+@import "pages/about/column-text";
+@import "pages/about/food-section";
+@import "pages/about/fusion";
