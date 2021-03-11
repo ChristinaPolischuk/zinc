@@ -2053,20 +2053,20 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   min-width: 90%;
 }
 
-.corporate .section-column-text-wedding {
+.wedding .section-column-text {
   padding: 5rem 0 0;
 }
 
-.corporate .section-column-text-wedding::after {
+.wedding .section-column-text::after {
   background-image: url(../img/pages/wedding/column-bg.png);
 }
 
-.corporate .section-column-text-wedding__wrapper {
+.wedding .section-column-text__wrapper {
   position: relative;
   min-height: 110vh;
 }
 
-.corporate .section-column-text-wedding__content {
+.wedding .section-column-text__content {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
@@ -2079,15 +2079,15 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   min-height: auto;
 }
 
-.corporate .section-column-text-wedding__areas {
+.wedding .section-column-text__areas {
   margin-top: 6rem;
 }
 
-.corporate .section-column-text-wedding__area {
+.wedding .section-column-text__area {
   position: relative;
 }
 
-.corporate .section-column-text-wedding__area-image {
+.wedding .section-column-text__area-image {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
@@ -2097,33 +2097,33 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
      object-fit: contain;
 }
 
-.corporate .section-column-text-wedding__area-image.image-1 {
+.wedding .section-column-text__area-image.image-1 {
   width: 60%;
   z-index: 1;
   padding-bottom: 12rem;
 }
 
-.corporate .section-column-text-wedding__area-image.image-2 {
+.wedding .section-column-text__area-image.image-2 {
   z-index: 4;
   width: 46%;
   top: 24rem;
 }
 
-.corporate .section-column-text-wedding__area-image.image-3 {
+.wedding .section-column-text__area-image.image-3 {
   z-index: 3;
   top: 3.2rem;
   margin-left: -2rem;
   padding-bottom: 12rem;
 }
 
-.corporate .section-column-text-wedding__area-image.image-4 {
+.wedding .section-column-text__area-image.image-4 {
   z-index: 2;
   width: 56%;
   top: 19.5rem;
   left: 50%;
 }
 
-.corporate .section-column-text-wedding__area-text {
+.wedding .section-column-text__area-text {
   display: block;
   position: absolute;
   z-index: 2;
@@ -2133,40 +2133,40 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   bottom: auto;
 }
 
-.corporate .section-column-text-wedding__area-text.text-1 {
+.wedding .section-column-text__area-text.text-1 {
   z-index: 2;
   top: 11rem;
   left: 55.5%;
 }
 
-.corporate .section-column-text-wedding__area-text.text-2 {
+.wedding .section-column-text__area-text.text-2 {
   z-index: 5;
   top: 42.5rem;
   left: 9%;
 }
 
-.corporate .section-column-text-wedding__text {
+.wedding .section-column-text__text {
   margin-bottom: 1rem;
 }
 
-.corporate .btn-download {
+.wedding .btn-download {
   width: 33%;
 }
 
-.corporate .section-column-text-passionate {
+.wedding .section-column-text-passionate {
   padding: 5rem 0 0;
 }
 
-.corporate .section-column-text-passionate::after {
+.wedding .section-column-text-passionate::after {
   background-image: url(../img/pages/wedding/passionate-bg.png);
 }
 
-.corporate .section-column-text-passionate__wrapper {
+.wedding .section-column-text-passionate__wrapper {
   position: relative;
   min-height: 110vh;
 }
 
-.corporate .section-column-text-passionate__content {
+.wedding .section-column-text-passionate__content {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
@@ -2179,15 +2179,15 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   min-height: auto;
 }
 
-.corporate .section-column-text-passionate__areas {
+.wedding .section-column-text-passionate__areas {
   margin-top: 6rem;
 }
 
-.corporate .section-column-text-passionate__area {
+.wedding .section-column-text-passionate__area {
   position: relative;
 }
 
-.corporate .section-column-text-passionate__area-image {
+.wedding .section-column-text-passionate__area-image {
   position: -webkit-sticky;
   position: sticky;
   z-index: 1;
@@ -2197,33 +2197,33 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
      object-fit: contain;
 }
 
-.corporate .section-column-text-passionate__area-image.image-1 {
+.wedding .section-column-text-passionate__area-image.image-1 {
   width: 60%;
   z-index: 1;
   padding-bottom: 12rem;
 }
 
-.corporate .section-column-text-passionate__area-image.image-2 {
+.wedding .section-column-text-passionate__area-image.image-2 {
   z-index: 4;
   width: 46%;
   top: 24rem;
 }
 
-.corporate .section-column-text-passionate__area-image.image-3 {
+.wedding .section-column-text-passionate__area-image.image-3 {
   z-index: 3;
   top: 3.2rem;
   margin-left: -2rem;
   padding-bottom: 12rem;
 }
 
-.corporate .section-column-text-passionate__area-image.image-4 {
+.wedding .section-column-text-passionate__area-image.image-4 {
   z-index: 2;
   width: 56%;
   top: 19.5rem;
   left: 50%;
 }
 
-.corporate .section-column-text-passionate__area-text {
+.wedding .section-column-text-passionate__area-text {
   display: block;
   position: absolute;
   z-index: 2;
@@ -2233,23 +2233,23 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   bottom: auto;
 }
 
-.corporate .section-column-text-passionate__area-text.text-1 {
+.wedding .section-column-text-passionate__area-text.text-1 {
   z-index: 2;
   top: 11rem;
   left: 55.5%;
 }
 
-.corporate .section-column-text-passionate__area-text.text-2 {
+.wedding .section-column-text-passionate__area-text.text-2 {
   z-index: 5;
   top: 42.5rem;
   left: 9%;
 }
 
-.corporate .section-column-text-passionate__text {
+.wedding .section-column-text-passionate__text {
   margin-bottom: 1rem;
 }
 
-.corporate .btn-download {
+.wedding .btn-download {
   width: 33%;
 }
 
@@ -2815,9 +2815,9 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 
 .webp .section-conversation::after { background-image: url(../img/pages/index/about_bg.webp); }
 
-.webp .corporate .section-column-text-wedding::after { background-image: url(../img/pages/wedding/column-bg.webp); }
+.webp .wedding .section-column-text::after { background-image: url(../img/pages/wedding/column-bg.webp); }
 
-.webp .corporate .section-column-text-passionate::after { background-image: url(../img/pages/wedding/passionate-bg.webp); }
+.webp .wedding .section-column-text-passionate::after { background-image: url(../img/pages/wedding/passionate-bg.webp); }
 
 .webp .about .section-column-text::after { background-image: url(../img/pages/about/column-text_bg.webp); }
 
