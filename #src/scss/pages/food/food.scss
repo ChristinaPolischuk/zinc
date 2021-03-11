@@ -1,589 +1,589 @@
-* {
-padding: 0;
-box-sizing: border-box;
-margin: 0
-}
-
-
-
-@media screen and (max-width: 1080px){
-
-}
-
-/* Main */
-
-main {
-position: relative;
-}
-
-section {
-position: relative;
-min-height: 100vh;
-overflow: hidden;
-}
-
-.section-food {
-position: sticky;
-}
-
-.section-food::after {
-content: "";
-position: absolute;
-z-index: -1;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-image: url('../img/pages/index/ZincStudio.jpg');
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-
-.section-food__content {
-position: relative;
-}
-
-.section-food__title {
-margin: 40px 0;
-font-size: 133px;
-line-height: 126px;
-text-align: left;
-}
-
-.section-food__subtitle span {
-display: block;
-}
-
-.section-food__link {
-position: absolute;
-left: 0;
-bottom: 60px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.menu-section {
-display: flex;
-background-image: url('../img/pages/food/menu-section-bg.jpg');
-background-size: cover;
-background-attachment: fixed;
-}
-
-.menu-section .container {
-width: 100%;
-}
-
-.menu-section__description {
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-width: 100%;
-max-width: 892px;
-min-height: 100vh;
-margin: 0 auto;
-}
-
-.menu-section__description p {
-width: 100%;
-color: #FFF;
-font-size: 55px;
-line-height: 64px;
-font-weight: 500;
-font-family: 'Suisse Intl';
-margin: 0 0 34px 0;
-}
-
-.menu-section__description h4 {
-width: 100%;
-color: #FFF;
-font-size: 26px;
-line-height: 30px;
-font-weight: 500;
-font-family: 'Suisse Intl';
-margin: 0 0 10px 0;
-}
-
-.menu-section__description .btn-download {
-box-shadow: inset 0 0 5px 5px rgba(255,255,255,.2), 0px 0px 5px 5px rgba(255,255,255,.2);
-}
-
-.menu-section__description .btn-download:hover {
-box-shadow: 0px 0px 3px 3px rgba(255,255,255,.2);
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cooking-section {
-display: flex;
-background-image: url('../img/pages/food/cooking-section-bg.jpg');
-background-size: cover;
-background-attachment: fixed;
-}
-
-.cooking-section .container {
-width: 100%;
-}
-
-.cooking-section__description {
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-width: 100%;
-max-width: 892px;
-min-height: 100vh;
-margin: 0 auto 120px auto;
-}
-
-.cooking-section__description p {
-width: 100%;
-color: #FFF;
-font-size: 55px;
-line-height: 64px;
-font-weight: 500;
-font-family: 'Suisse Intl';
-margin: 0 0 34px 0;
-}
-
-.cooking-section__description h4 {
-width: 100%;
-color: #FFF;
-font-size: 26px;
-line-height: 30px;
-font-weight: 500;
-font-family: 'Suisse Intl';
-margin: 0 0 10px 0;
-}
-
-.cooking-section__slider {
-position: relative;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-align-content: flex-start;
-height: 120vh;
-}
-
-.cooking-section__slider img {
-display: block;
-width: 100%;
-}
-
-.cooking-section__slider-1 {
-position: absolute;
-top: 0;
-left: 0;
-z-index: 9;
-width: 1108px;
-}
-
-.cooking-section__slider-2 {
-position: absolute;
-top: 200px;
-left: 50px;
-z-index: 95;
-width: 624px;
-}
-
-.cooking-section__slider-3 {
-position: absolute;
-top: 200px;
-right: 0;
-z-index: 96;
-width: 584px;
-}
-
-.cooking-section__video {
-position: absolute;
-top: 300px;
-left: 50%;
-z-index: 97;
-display: block;
-width: 982px;
-margin: 0 0 0 -491px;
-}
-
-.cooking-section__video div {
-position: relative;
-width: 100%;
-height: 100%;
-cursor: pointer;
-}
-
-.cooking-section__video div:before {
-position: absolute;
-top: 50%;
-left: 50%;
-z-index: 98;
-display: block;
-content: '';
-width: 118px;
-height: 118px;
-background: url('../img/general/cooking-section-video-play.png');
-background-size: 118px;
-transform: translate(-50%, -50%);
-transition: .6s;
-}
-
-.cooking-section__video div:hover:before {
-transform: scale(1.1) translate(-50%, -50%);
-}
-
-.cooking-section__link {
-display: flex;
-flex-wrap: wrap;
-align-content: center;
-align-items: center;
-width: 100%;
-max-width: 480px;
-min-height: 100vh;
-margin: 0 auto;
-}
-
-.cooking-section__link .btn-download {
-width: 100%;
-padding: 22px 60px 22px 22px;
-background: url('../img/general/cooking-section-link-download.png') 95% 30% no-repeat;
-background-size: 20px 24px;
-box-shadow: inset 0 0 7px 7px rgba(255,255,255,.2), 0px 0px 7px 7px rgba(255,255,255,.2);
-margin: 14px 0;
-}
-
-.cooking-section__link .btn-download:hover {
-width: 100%;
-padding: 22px 60px 22px 22px;
-background: url('../img/general/cooking-section-link-download.png') 95% 30% no-repeat;
-background-size: 20px 24px;
-box-shadow: 0px 0px 3px 3px rgba(255,255,255,.2);
-margin: 14px 0;
-}
-
-.cooking-section__link .btn-download__text {
-font-size: 27px;
-}
-
-.cooking-section__link .btn-download__info {
-font-size: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-.team-section {
-display: flex;
-padding: 98px 0 56px 0;
-background-image: url('../img/pages/food/team-section-bg.jpg');
-background-size: cover;
-background-attachment: fixed;
-}
-
-.team-section .container {
-display: flex;
-width: 100%;
-}
-
-.team-section h2 {
-width: 100%;
-color: #FFF;
-font-size: 99px;
-line-height: 96px;
-font-weight: 500;
-font-family: 'Suisse Intl';
-margin: 0 0 30px 0;
-}
-
-.team-section__first {
-width: 42%;
-}
-
-.team-section__second {
-width: 57%;
-padding: 0 0 0 32px;
-}
-
-
-.team-section ul {
-display: flex;
-flex-wrap: wrap;
-list-style: none;
-}
-
-.team-section__first li {
-padding: 0 32px 0 0;
-}
-
-.team-section__second li {
-width: 50%;
-padding: 0 78px 0 0;
-}
-
-.team-section__first li:nth-child(even),
-.team-section__second li:nth-child(even) {
-padding: 0;
-}
-
-.team-section li a {
-position: relative;
-display: block;
-padding: 0 0 0 64px;
-cursor: pointer;
-}
-
-.team-section .debbie-vukovic {
-margin: 142px 0 0 0;
-}
-
-.team-section .mathew-brodribb {
-margin: 60px 0 0 52px;
-}
-
-.team-section .sam-baker {
-margin: 112px 0 0 0;
-}
-
-.team-section .reon-scott {
-margin: 56px 0 0 32px;
-}
-
-.team-section li h3 {
-position: absolute;
-top: 50%;
-left: 0;
-transform: translateY(-50%);
-color: #FFF;
-font-size: 12px;
-font-weight: 500;
-line-height: 13px;
-font-family: 'Suisse Intl';
-}
-
-.team-section li h3:after {
-position: absolute;
-bottom: -10px;
-left: 0;
-content: '';
-width: 10px;
-height: 1px;
-background: #FFF;
-margin: 10px 0 0 0;
-transition: .6s;
-}
-
-.team-section li a:hover h3:after {
-width: 100%;
-}
-
-.team-section li h3 span {
-display: block;
-font-weight: 300;
-}
-
-.team-section li img {
-display: block;
-width: 196px;
-}
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1200px) {
-
-	.section-food__title {
-	font-size: 11.08vw;
-	line-height: 10.5vw;
-	margin: 20px 0;
-	}
-
-	.section-food__link {
-	bottom: 30px;
-	}
-
-	.menu-section__description h4 {
-	font-size: 2.17vw;
-	line-height: 2.5vw;
-	}
-
-	.menu-section__description p {
-	font-size: 4.58vw;
-	line-height: 5.33vw;
-	}
-
-	.cooking-section__description h4 {
-	font-size: 2.17vw;
-	line-height: 2.5vw;
-	}
-
-	.cooking-section__description p {
-	font-size: 4.58vw;
-	line-height: 5.33vw;
-	}
-
-	.cooking-section__slider-1 {
-	width: 92.33vw;
-	}
-
-	.cooking-section__slider-2 {
-	top: 16.67vw;
-	left: 4.17vw;
-	width: 52vw;
-	}
-
-	.cooking-section__slider-3 {
-	top: 16.67vw;
-	width: 40.33vw;
-	}
-
-	.cooking-section__video {
-	top: 25vw;
-	width: 81.83vw;
-	margin: 0 0 0 -40.92vw;
-	}
-
-	.cooking-section__video div:before {
-	width: 9.83vw;
-	height: 9.83vw;
-	background: url('../img/general/cooking-section-video-play.png');
-	background-size: 9.83vw;
-	}
-
-	.cooking-section__link .btn-download__text {
-	font-size: 2.25vw;
-	}
-
-	.cooking-section__link .btn-download__info {
-	font-size: 1.25vw;
-	}
-	
-.team-section {
-display: none;
-}
-
-}
-
-@media screen and (max-width: 576px) {
-
-	.section-food__title {
-	font-size: 64px;
-	line-height: 60px;
-	}
-
-	.menu-section__description h4 {
-	font-size: 14px;
-	line-height: 18px;
-	}
-
-	.menu-section__description p {
-	font-size: 26px;
-	line-height: 31px;
-	}
-
-	.cooking-section__description {
-	min-height: 50vh;
-	}
-
-	.cooking-section__slider {
-	height: auto;
-	}
-
-	.cooking-section__description h4 {
-	font-size: 14px;
-	line-height: 18px;
-	}
-
-	.cooking-section__description p {
-	font-size: 26px;
-	line-height: 31px;
-	}
-
-	.cooking-section__slider-1,
-	.cooking-section__slider-2,
-	.cooking-section__slider-3 {
-	display: none;
-	}
-
-	.cooking-section__video {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	margin: 0;
-	}
-
-	.cooking-section__video div:before {
-	width: 56px;
-	height: 56px;
-	background: url('../img/general/cooking-section-video-play.png');
-	background-size: 56px;
-	}
-
-	.cooking-section__link .btn-download__text {
-	font-size: 14px;
-	}
-
-	.cooking-section__link .btn-download__info {
-	font-size: 12px;
-	}
-
-
-
-
-
-
-
-
-}
+//* {
+//padding: 0;
+//box-sizing: border-box;
+//margin: 0
+//}
+//
+//
+//
+//@media screen and (max-width: 1080px){
+//
+//}
+//
+///* Main */
+//
+//main {
+//position: relative;
+//}
+//
+//section {
+//position: relative;
+//min-height: 100vh;
+//overflow: hidden;
+//}
+//
+//.section-food {
+//position: sticky;
+//}
+//
+//.section-food::after {
+//content: "";
+//position: absolute;
+//z-index: -1;
+//top: 0;
+//left: 0;
+//width: 100%;
+//height: 100%;
+//background-image: url('../img/pages/index/ZincStudio.jpg');
+//background-position: center;
+//background-size: cover;
+//background-repeat: no-repeat;
+//background-attachment: fixed;
+//}
+//
+//.section-food__content {
+//position: relative;
+//}
+//
+//.section-food__title {
+//margin: 40px 0;
+//font-size: 133px;
+//line-height: 126px;
+//text-align: left;
+//}
+//
+//.section-food__subtitle span {
+//display: block;
+//}
+//
+//.section-food__link {
+//position: absolute;
+//left: 0;
+//bottom: 60px;
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//.menu-section {
+//display: flex;
+//background-image: url('../img/pages/food/menu-section-bg.jpg');
+//background-size: cover;
+//background-attachment: fixed;
+//}
+//
+//.menu-section .container {
+//width: 100%;
+//}
+//
+//.menu-section__description {
+//display: flex;
+//flex-wrap: wrap;
+//align-content: center;
+//align-items: center;
+//width: 100%;
+//max-width: 892px;
+//min-height: 100vh;
+//margin: 0 auto;
+//}
+//
+//.menu-section__description p {
+//width: 100%;
+//color: #FFF;
+//font-size: 55px;
+//line-height: 64px;
+//font-weight: 500;
+//font-family: 'Suisse Intl';
+//margin: 0 0 34px 0;
+//}
+//
+//.menu-section__description h4 {
+//width: 100%;
+//color: #FFF;
+//font-size: 26px;
+//line-height: 30px;
+//font-weight: 500;
+//font-family: 'Suisse Intl';
+//margin: 0 0 10px 0;
+//}
+//
+//.menu-section__description .btn-download {
+//box-shadow: inset 0 0 5px 5px rgba(255,255,255,.2), 0px 0px 5px 5px rgba(255,255,255,.2);
+//}
+//
+//.menu-section__description .btn-download:hover {
+//box-shadow: 0px 0px 3px 3px rgba(255,255,255,.2);
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//.cooking-section {
+//display: flex;
+//background-image: url('../img/pages/food/cooking-section-bg.jpg');
+//background-size: cover;
+//background-attachment: fixed;
+//}
+//
+//.cooking-section .container {
+//width: 100%;
+//}
+//
+//.cooking-section__description {
+//display: flex;
+//flex-wrap: wrap;
+//align-content: center;
+//align-items: center;
+//width: 100%;
+//max-width: 892px;
+//min-height: 100vh;
+//margin: 0 auto 120px auto;
+//}
+//
+//.cooking-section__description p {
+//width: 100%;
+//color: #FFF;
+//font-size: 55px;
+//line-height: 64px;
+//font-weight: 500;
+//font-family: 'Suisse Intl';
+//margin: 0 0 34px 0;
+//}
+//
+//.cooking-section__description h4 {
+//width: 100%;
+//color: #FFF;
+//font-size: 26px;
+//line-height: 30px;
+//font-weight: 500;
+//font-family: 'Suisse Intl';
+//margin: 0 0 10px 0;
+//}
+//
+//.cooking-section__slider {
+//position: relative;
+//display: flex;
+//flex-wrap: wrap;
+//justify-content: space-between;
+//align-content: flex-start;
+//height: 120vh;
+//}
+//
+//.cooking-section__slider img {
+//display: block;
+//width: 100%;
+//}
+//
+//.cooking-section__slider-1 {
+//position: absolute;
+//top: 0;
+//left: 0;
+//z-index: 9;
+//width: 1108px;
+//}
+//
+//.cooking-section__slider-2 {
+//position: absolute;
+//top: 200px;
+//left: 50px;
+//z-index: 95;
+//width: 624px;
+//}
+//
+//.cooking-section__slider-3 {
+//position: absolute;
+//top: 200px;
+//right: 0;
+//z-index: 96;
+//width: 584px;
+//}
+//
+//.cooking-section__video {
+//position: absolute;
+//top: 300px;
+//left: 50%;
+//z-index: 97;
+//display: block;
+//width: 982px;
+//margin: 0 0 0 -491px;
+//}
+//
+//.cooking-section__video div {
+//position: relative;
+//width: 100%;
+//height: 100%;
+//cursor: pointer;
+//}
+//
+//.cooking-section__video div:before {
+//position: absolute;
+//top: 50%;
+//left: 50%;
+//z-index: 98;
+//display: block;
+//content: '';
+//width: 118px;
+//height: 118px;
+//background: url('../img/general/cooking-section-video-play.png');
+//background-size: 118px;
+//transform: translate(-50%, -50%);
+//transition: .6s;
+//}
+//
+//.cooking-section__video div:hover:before {
+//transform: scale(1.1) translate(-50%, -50%);
+//}
+//
+//.cooking-section__link {
+//display: flex;
+//flex-wrap: wrap;
+//align-content: center;
+//align-items: center;
+//width: 100%;
+//max-width: 480px;
+//min-height: 100vh;
+//margin: 0 auto;
+//}
+//
+//.cooking-section__link .btn-download {
+//width: 100%;
+//padding: 22px 60px 22px 22px;
+//background: url('../img/general/cooking-section-link-download.png') 95% 30% no-repeat;
+//background-size: 20px 24px;
+//box-shadow: inset 0 0 7px 7px rgba(255,255,255,.2), 0px 0px 7px 7px rgba(255,255,255,.2);
+//margin: 14px 0;
+//}
+//
+//.cooking-section__link .btn-download:hover {
+//width: 100%;
+//padding: 22px 60px 22px 22px;
+//background: url('../img/general/cooking-section-link-download.png') 95% 30% no-repeat;
+//background-size: 20px 24px;
+//box-shadow: 0px 0px 3px 3px rgba(255,255,255,.2);
+//margin: 14px 0;
+//}
+//
+//.cooking-section__link .btn-download__text {
+//font-size: 27px;
+//}
+//
+//.cooking-section__link .btn-download__info {
+//font-size: 15px;
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//.team-section {
+//display: flex;
+//padding: 98px 0 56px 0;
+//background-image: url('../img/pages/food/team-section-bg.jpg');
+//background-size: cover;
+//background-attachment: fixed;
+//}
+//
+//.team-section .container {
+//display: flex;
+//width: 100%;
+//}
+//
+//.team-section h2 {
+//width: 100%;
+//color: #FFF;
+//font-size: 99px;
+//line-height: 96px;
+//font-weight: 500;
+//font-family: 'Suisse Intl';
+//margin: 0 0 30px 0;
+//}
+//
+//.team-section__first {
+//width: 42%;
+//}
+//
+//.team-section__second {
+//width: 57%;
+//padding: 0 0 0 32px;
+//}
+//
+//
+//.team-section ul {
+//display: flex;
+//flex-wrap: wrap;
+//list-style: none;
+//}
+//
+//.team-section__first li {
+//padding: 0 32px 0 0;
+//}
+//
+//.team-section__second li {
+//width: 50%;
+//padding: 0 78px 0 0;
+//}
+//
+//.team-section__first li:nth-child(even),
+//.team-section__second li:nth-child(even) {
+//padding: 0;
+//}
+//
+//.team-section li a {
+//position: relative;
+//display: block;
+//padding: 0 0 0 64px;
+//cursor: pointer;
+//}
+//
+//.team-section .debbie-vukovic {
+//margin: 142px 0 0 0;
+//}
+//
+//.team-section .mathew-brodribb {
+//margin: 60px 0 0 52px;
+//}
+//
+//.team-section .sam-baker {
+//margin: 112px 0 0 0;
+//}
+//
+//.team-section .reon-scott {
+//margin: 56px 0 0 32px;
+//}
+//
+//.team-section li h3 {
+//position: absolute;
+//top: 50%;
+//left: 0;
+//transform: translateY(-50%);
+//color: #FFF;
+//font-size: 12px;
+//font-weight: 500;
+//line-height: 13px;
+//font-family: 'Suisse Intl';
+//}
+//
+//.team-section li h3:after {
+//position: absolute;
+//bottom: -10px;
+//left: 0;
+//content: '';
+//width: 10px;
+//height: 1px;
+//background: #FFF;
+//margin: 10px 0 0 0;
+//transition: .6s;
+//}
+//
+//.team-section li a:hover h3:after {
+//width: 100%;
+//}
+//
+//.team-section li h3 span {
+//display: block;
+//font-weight: 300;
+//}
+//
+//.team-section li img {
+//display: block;
+//width: 196px;
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//@media screen and (max-width: 1200px) {
+//
+//	.section-food__title {
+//	font-size: 11.08vw;
+//	line-height: 10.5vw;
+//	margin: 20px 0;
+//	}
+//
+//	.section-food__link {
+//	bottom: 30px;
+//	}
+//
+//	.menu-section__description h4 {
+//	font-size: 2.17vw;
+//	line-height: 2.5vw;
+//	}
+//
+//	.menu-section__description p {
+//	font-size: 4.58vw;
+//	line-height: 5.33vw;
+//	}
+//
+//	.cooking-section__description h4 {
+//	font-size: 2.17vw;
+//	line-height: 2.5vw;
+//	}
+//
+//	.cooking-section__description p {
+//	font-size: 4.58vw;
+//	line-height: 5.33vw;
+//	}
+//
+//	.cooking-section__slider-1 {
+//	width: 92.33vw;
+//	}
+//
+//	.cooking-section__slider-2 {
+//	top: 16.67vw;
+//	left: 4.17vw;
+//	width: 52vw;
+//	}
+//
+//	.cooking-section__slider-3 {
+//	top: 16.67vw;
+//	width: 40.33vw;
+//	}
+//
+//	.cooking-section__video {
+//	top: 25vw;
+//	width: 81.83vw;
+//	margin: 0 0 0 -40.92vw;
+//	}
+//
+//	.cooking-section__video div:before {
+//	width: 9.83vw;
+//	height: 9.83vw;
+//	background: url('../img/general/cooking-section-video-play.png');
+//	background-size: 9.83vw;
+//	}
+//
+//	.cooking-section__link .btn-download__text {
+//	font-size: 2.25vw;
+//	}
+//
+//	.cooking-section__link .btn-download__info {
+//	font-size: 1.25vw;
+//	}
+//
+//.team-section {
+//display: none;
+//}
+//
+//}
+//
+//@media screen and (max-width: 576px) {
+//
+//	.section-food__title {
+//	font-size: 64px;
+//	line-height: 60px;
+//	}
+//
+//	.menu-section__description h4 {
+//	font-size: 14px;
+//	line-height: 18px;
+//	}
+//
+//	.menu-section__description p {
+//	font-size: 26px;
+//	line-height: 31px;
+//	}
+//
+//	.cooking-section__description {
+//	min-height: 50vh;
+//	}
+//
+//	.cooking-section__slider {
+//	height: auto;
+//	}
+//
+//	.cooking-section__description h4 {
+//	font-size: 14px;
+//	line-height: 18px;
+//	}
+//
+//	.cooking-section__description p {
+//	font-size: 26px;
+//	line-height: 31px;
+//	}
+//
+//	.cooking-section__slider-1,
+//	.cooking-section__slider-2,
+//	.cooking-section__slider-3 {
+//	display: none;
+//	}
+//
+//	.cooking-section__video {
+//	position: relative;
+//	top: 0;
+//	left: 0;
+//	width: 100%;
+//	margin: 0;
+//	}
+//
+//	.cooking-section__video div:before {
+//	width: 56px;
+//	height: 56px;
+//	background: url('../img/general/cooking-section-video-play.png');
+//	background-size: 56px;
+//	}
+//
+//	.cooking-section__link .btn-download__text {
+//	font-size: 14px;
+//	}
+//
+//	.cooking-section__link .btn-download__info {
+//	font-size: 12px;
+//	}
+//
+//
+//
+//
+//
+//
+//
+//
+//}
