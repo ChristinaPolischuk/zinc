@@ -5,10 +5,41 @@
   .content-wrapper {
     padding: 0 2.15rem;
   }
+  &__wrapper-bg {
+    position: sticky;
+    top: 28vh;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    min-height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+    .section-plans {
+      &__info {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  }
   &__wrapper {
     position: relative;
     min-height: 130vh;
     padding-bottom: 1rem;
+    &:last-child {
+      padding-bottom: 0;
+      .section-plans {
+        &__content {
+          padding-bottom: 0;
+        }
+      }
+    }
   }
   &__content {
     position: sticky;
