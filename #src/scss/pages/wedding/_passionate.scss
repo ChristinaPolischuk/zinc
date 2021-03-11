@@ -1,0 +1,99 @@
+.corporate {
+    .section-column-text-passionate {
+      padding: 5rem 0 0;
+  
+      &::after {
+        background-image: url(../img/pages/wedding/passionate-bg.png);
+      }
+  
+      &__wrapper {
+        position: relative;
+        min-height: 110vh;
+      }
+  
+      &__content {
+        position: sticky;
+        z-index: 1;
+        top: 25vh;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        max-width: 895px;
+        min-height: auto;
+      }
+  
+      &__areas {
+        margin-top: 6rem;
+      }
+  
+      &__area {
+        position: relative;
+  
+        &-image {
+          position: sticky;
+          z-index: 1;
+          top: 0;
+          height: auto;
+          object-fit: contain;
+  
+          &.image-1 {
+            width: 60%;
+            z-index: 1;
+            padding-bottom: 12rem;
+          }
+  
+          &.image-2 {
+            z-index: 4;
+            width: 46%;
+            top: 24rem;
+          }
+  
+          &.image-3 {
+            z-index: 3;
+            top: 3.2rem;
+            margin-left: -2rem;
+            padding-bottom: 12rem;
+          }
+  
+          &.image-4 {
+            z-index: 2;
+            width: 56%;
+            top: 19.5rem;
+            left: 50%;
+          }
+        }
+  
+        &-text {
+          display: block;
+          position: absolute;
+          z-index: 2;
+          padding-top: 5rem;
+          max-width: 15rem;
+          right: auto;
+          bottom: auto;
+  
+          &.text-1 {
+            z-index: 2;
+            top: 11rem;
+            left: 55.5%;
+          }
+  
+          &.text-2 {
+            z-index: 5;
+            top: 42.5rem;
+            left: 9%;
+          }
+        }
+      }
+  
+      &__text {
+        margin-bottom: 1rem;
+      }
+    }
+  
+    .btn-download {
+      width: 33%;
+    }
+  }
+  
