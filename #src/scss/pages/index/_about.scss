@@ -1,4 +1,7 @@
 .section-about {
+	&::after {
+		background-image: url(../img/pages/index/about_bg.jpg);
+	}
 	&__content {
 		margin: 0 auto;
 		max-width: 895px;

@@ -36,7 +36,7 @@ ScrollTrigger.create({
 	pin: '.anchor',
 	start: 'top top',
 	endtrigger: '.section-feedback__content',
-	//end: 'bottom top-=' + window.innerHeight, 
+	//end: 'bottom top-=' + window.innerHeight,
 	end: () => 'bottom top-=' + window.innerHeight,
 });
 
