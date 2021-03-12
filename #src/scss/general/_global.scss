@@ -139,7 +139,7 @@ a {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-attachment: fixed;
-		transform: translateY(-1%) scale(1.02); 
+		transform: translateY(-1%) scale(1.02);
 	}
 
 	&-content {
@@ -233,4 +233,20 @@ html:not(.no-js) {
 	&.show {
 		opacity: 1;
 	}
+}
+
+[data-aos] {
+	&.aos-animate {
+		pointer-events: initial;
+	}
+}
+[data-aos="fade-out"] {
+	pointer-events: initial;
+	&.aos-animate {
+		pointer-events: none;
+	}
+}
+
+[data-aos^="slide-"] {
+	transition-duration: 0.8s !important;
 }

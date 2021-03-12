@@ -1,5 +1,5 @@
 .section-conversation {
-	overflow: hidden;
+	padding: 5rem 0;
 	&::after {
 		background-image: url(../img/pages/index/about_bg.jpg);
 	}
@@ -7,9 +7,24 @@
 		width: 100%;
 		margin-bottom: 50px;
 	}
+	.section-feedback {
+		&__content {
+			min-height: 120vh;
+		}
+		&__wrapper {
+			position: sticky;
+			z-index: 1;
+			top: 10vh;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin: 0 auto;
+		}
+	}
 }
 
 .feedback-form-conversation {
+	margin-right: 1px;
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -31,6 +46,9 @@
 	&__message {
 		padding: 15px;
 		min-height: 15rem;
+		&:focus {
+			outline: 0;
+		}
 	}
 	&__submit {
 		width: 161px;

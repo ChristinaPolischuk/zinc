@@ -640,6 +640,24 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   opacity: 1;
 }
 
+[data-aos].aos-animate {
+  pointer-events: initial;
+}
+
+[data-aos="fade-out"] {
+  pointer-events: initial;
+}
+
+[data-aos="fade-out"].aos-animate {
+  pointer-events: none;
+}
+
+[data-aos^="slide-"] {
+  -webkit-transition-duration: 0.8s !important;
+       -o-transition-duration: 0.8s !important;
+          transition-duration: 0.8s !important;
+}
+
 .header {
   padding: 60px 0;
   position: fixed;
@@ -721,8 +739,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover .burger-menu__text {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
@@ -1945,7 +1963,7 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .section-conversation {
-  overflow: hidden;
+  padding: 5rem 0;
 }
 
 .section-conversation::after {
@@ -1957,7 +1975,23 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin-bottom: 50px;
 }
 
+.section-conversation .section-feedback__content {
+  min-height: 120vh;
+}
+
+.section-conversation .section-feedback__wrapper {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1;
+  top: 10vh;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
 .feedback-form-conversation {
+  margin-right: 1px;
   width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2006,6 +2040,10 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 .feedback-form-conversation__message {
   padding: 15px;
   min-height: 15rem;
+}
+
+.feedback-form-conversation__message:focus {
+  outline: 0;
 }
 
 .feedback-form-conversation__submit {
