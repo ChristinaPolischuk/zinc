@@ -543,6 +543,9 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  -webkit-transform: translateY(-1%) scale(1.02);
+      -ms-transform: translateY(-1%) scale(1.02);
+          transform: translateY(-1%) scale(1.02);
 }
 
 .section-content {
@@ -718,8 +721,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover .burger-menu__text {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
@@ -1479,6 +1482,11 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 
 .home .section-fusion:after {
   background-image: url(../img/pages/index/fusion_bg.jpg);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .home .section-fusion__wrapper {
@@ -1682,6 +1690,10 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   font-size: 16px;
 }
 
+.corporate .section-main {
+  padding: 2rem 0;
+}
+
 .corporate .section-main::after {
   background-image: url(../img/pages/index/ZincStudio.jpg);
 }
@@ -1694,6 +1706,11 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin: 40px 0;
   font-size: 6rem;
   text-align: left;
+  line-height: 6rem;
+}
+
+.corporate .section-main__subtitle {
+  margin-bottom: 3rem;
 }
 
 .corporate .section-main__subtitle span {
@@ -2052,6 +2069,10 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   min-width: 90%;
 }
 
+.wedding .section-main {
+  padding: 2rem 0;
+}
+
 .wedding .section-main::after {
   background-image: url(../img/pages/index/ZincStudio.jpg);
 }
@@ -2064,6 +2085,11 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin: 40px 0;
   font-size: 6rem;
   text-align: left;
+  line-height: 6rem;
+}
+
+.wedding .section-main__subtitle {
+  margin-bottom: 3rem;
 }
 
 .wedding .section-main__subtitle span {
@@ -2411,6 +2437,10 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin-bottom: 1rem;
 }
 
+.private .section-main {
+  padding: 2rem 0;
+}
+
 .private .section-main::after {
   background-image: url(../img/pages/index/ZincStudio.jpg);
 }
@@ -2423,6 +2453,11 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   margin: 40px 0;
   font-size: 6rem;
   text-align: left;
+  line-height: 6rem;
+}
+
+.private .section-main__subtitle {
+  margin-bottom: 3rem;
 }
 
 .private .section-main__subtitle span {
@@ -2776,6 +2811,10 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   font-size: 6rem;
   text-align: left;
   line-height: 6rem;
+}
+
+.food-and-beverage .section-main__subtitle {
+  margin-bottom: 3rem;
 }
 
 .food-and-beverage .section-main__subtitle span {
