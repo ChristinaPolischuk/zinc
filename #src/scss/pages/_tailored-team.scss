@@ -9,6 +9,8 @@
             .first-string {
                 display: flex;
                 justify-content: space-between;
+                min-height: 110vh;
+                margin-bottom: 5rem;
                 .team-title {
                     font-size: 99px;
                     line-height: 96px;
@@ -18,9 +20,10 @@
                 .profile {
                     height: 15rem;
                     width: 25%;
-                    position: relative;
                     display: flex;
                     left: 4rem;
+                    position: sticky;
+                    top: 0;
                     &:nth-child(2) {
                         top: 2rem;
                         .profile-photo {
@@ -58,13 +61,13 @@
             .second-string {
                 display: flex;
                 justify-content: space-between;
-                min-height: 390px;
-
+                min-height: 110vh;
                 .profile {
                     height: 15rem;
                     width: 25%;
-                    position: relative;
                     display: flex;
+                    position: sticky;
+                    top: 0;
                     &:nth-child(1) {
                         top: 7rem;
                         .profile-photo {

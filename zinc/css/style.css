@@ -739,8 +739,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover .burger-menu__text {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
@@ -1159,6 +1159,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  min-height: 110vh;
+  margin-bottom: 5rem;
 }
 
 .section-team .content-wrapper .container .first-string .team-title {
@@ -1171,11 +1173,13 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 .section-team .content-wrapper .container .first-string .profile {
   height: 15rem;
   width: 25%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   left: 4rem;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .section-team .content-wrapper .container .first-string .profile:nth-child(2) {
@@ -1222,16 +1226,18 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-height: 390px;
+  min-height: 110vh;
 }
 
 .section-team .content-wrapper .container .second-string .profile {
   height: 15rem;
   width: 25%;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .section-team .content-wrapper .container .second-string .profile:nth-child(1) {
