@@ -543,9 +543,6 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-transform: translateY(-1%) scale(1.02);
-      -ms-transform: translateY(-1%) scale(1.02);
-          transform: translateY(-1%) scale(1.02);
 }
 
 .section-content {
@@ -739,8 +736,8 @@ html:not(.no-js) [data-aos="fade-out"][data-aos="fade-out"].aos-animate {
 }
 
 .burger-menu:hover .burger-menu__text {
-  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
-          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+  -webkit-animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+          animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
 }
 
 @-webkit-keyframes moveUpThenDown {
